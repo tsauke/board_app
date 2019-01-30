@@ -3,5 +3,5 @@ Rails.application.routes.draw do
   get 'boards/new', to: 'boards#new'
   post 'boards', to: 'boards#create'
   get 'boards/:id', to: 'boards#show'
-  resources :boards, only: [:index, :new, :create, :show]
+  resources :boards
 end
