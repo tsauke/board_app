@@ -40,7 +40,7 @@
       <td><%= board.created_at.to_s(:datetime_jp) %></td>
       <td><%= board.updated_at.to_s(:datetime_jp) %></td>
       <td><%= link_to '詳細', board, class: 'btn btn-outline-dark' %></td>
-      <td><%= link_to '削除', board, class: 'btn btn-outline-dark', method: :delete %></td>
+      <td><%= link_to '削除', board, class: 'btn btn-outline-dark', method: :delete, data: {confirm: '本当に消していいですか?'} %></td>
     </tr>
   <% end %>
   </tbody>
